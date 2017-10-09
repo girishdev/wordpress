@@ -1,0 +1,48 @@
+/*
+Theme Name: LWP
+Author: LWC
+Author URI: http://www.youtube.com
+Version: 1.0
+*/
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+a:link,
+a:visited{
+    color: #006ec3;
+}
+
+p{
+    line-height: 1.65em;
+}
+
+/* General Layout */
+div.container{
+    max-width: 920px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Header*/
+.site-header{
+    border-bottom: 2px solid #999999;
+}
+
+/*article*/
+article.post{
+    border-bottom: 2px dotted #BBBBBB;
+}
+article.post:last-of-type{
+    border-bottom: none;
+}
+
+/*Footer*/
+.site-footer{
+    margin-top: 30px;
+    border-top: 2px solid #999999;
+}
