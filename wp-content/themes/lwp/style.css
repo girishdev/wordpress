@@ -81,7 +81,10 @@ article.post:last-of-type{
 }
 
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited {
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+    font-weight: bold;
     background-color: #006ec3;
     color: #ffffff;
 }
@@ -130,4 +133,72 @@ div.info-box h4 {
 }
 div.info-box p {
     font-size: 85%;
+}
+
+/*Children Liks*/
+.children-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+.children-links a:link,
+.children-links a:visited {
+    text-decoration: none;
+}
+.children-links ul{
+    float: left;
+}
+.children-links li{
+    margin-right: 20px;
+}
+.children-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #DDDDDD;
+    font-size: 120%;
+    font-weight: bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited{
+    color: #333333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+    border-bottom: 1px solid #DDDDDD;
+    color: #333333;
+    cursor: default;
+}
+
+/*Post Styles*/
+.post h2{
+    margin-bottom: 0px;
+}
+p.post-info{
+    font-size: 87%;
+    color: #999999;
+}
+p.post-info a:link,
+p.post-info a:visited{
+    color: #999999;
+}
+
+/*Image Styles*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.has-thumbnail {
+    position: relative;
+    padding-left: 200px;
+    line-height: 55px;
+}
+.post-thumbnail {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.has-thumbnail .post-thumbnail a {
+    display: inherit;
 }
