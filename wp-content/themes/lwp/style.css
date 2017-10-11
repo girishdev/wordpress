@@ -97,3 +97,37 @@ article.post:last-of-type{
 article.page h2 {
     font-size: 300%;
 }
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/*Page-Portfolio*/
+div.title-column {
+    width: 30%;
+    float: left;
+}
+
+div.text-column {
+    width: 70%;
+    float: right;
+}
+
+/*Info box styles*/
+div.info-box {
+    width: 30%;
+    float: right;
+    margin: 0px 0px 30px 30px;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+div.info-box h4 {
+    margin-bottom: 6px;
+}
+div.info-box p {
+    font-size: 85%;
+}

@@ -15,7 +15,12 @@
         <header class="site-header">
 
             <h1><a href="<?php echo home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
-            <h5><?php bloginfo("description"); ?></h5>
+            <h5>
+                <?php bloginfo("description"); ?>
+                <?php if(is_page(13)){?>
+                    - Thank you for viewing our work
+                <?php }?>
+            </h5>
             <nav class="site-nav">
                 <?php
                 $args = array(
