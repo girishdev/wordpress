@@ -202,3 +202,28 @@ img{
 .has-thumbnail .post-thumbnail a {
     display: inherit;
 }
+
+/*Search form*/
+div.hd-search{
+    float: right;
+}
+
+div.hd-search label{
+    position: absolute;
+    left: -9999px;
+}
+
+div.hd-search #s{
+    border-radius: 0px;
+    border: 1px solid #CCCCCC;
+    vertical-align: top;
+    padding: 4px 5px;
+}
+
+div.hd-search #searchsubmit{
+    background-color: #006ec3;
+    color: #ffffff;
+    padding: 5px 14px;
+    border: none;
+    vertical-align: top;
+}
