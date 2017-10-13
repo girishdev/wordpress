@@ -34,6 +34,29 @@ Creating Themes(Pages order wise):-
         + How to assign a featured image
         + Output image in theme and "control aspect ratio of image"
 
-11. -
+11. - Search Form and its result page
+
+12. - DRY - (Don't Repeat Yourself)
+
+13. - Post Formats
+        aside
+        gallery
+        link
+        image
+        quote
+        status
+        videos
+        audio
+        chat
+
+      - Enable Post Formats
+      - Craft different presentations
+
+
+
+
+
+
+
 
 

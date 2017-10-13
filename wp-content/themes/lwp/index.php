@@ -8,7 +8,7 @@ get_header();
 	if($post_query->have_posts()) :
 	 	while (have_posts()) : the_post();
 
-	        get_template_part('content');
+	        get_template_part('content', get_post_format());
 
 	 	endwhile;
 
