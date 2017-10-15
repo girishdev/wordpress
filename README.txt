@@ -53,6 +53,43 @@ Creating Themes(Pages order wise):-
       - Craft different presentations
 
 
+===================================================================
+===================================================================
+Portfolio Gallery For My Job Description:-
+    - Portfolio Gallery
+    - Gridster-Lite
+
+My Themes:-
+    + Twenty Seventeen
+    + Espied
+    + Amazing Blog
+    + Proficiency
+    + DarKOrange
+    + laveo
+    + Bushwick
+    + Silvia
+    + childcare
+    + Totomo
+    + software
+    + Natural lite
+    + Buntu
+    + iParty
+    + Sparking
+
+
+
+
+Wordpress Picture
+Portfolio Gallery
+
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value memory_limit 400M
+php_value max_execution_time 180
+php_value max_input_time 180
+
+===================================================================
+===================================================================
 
 
 
