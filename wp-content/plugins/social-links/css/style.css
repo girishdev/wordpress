@@ -1,0 +1,4 @@
+.social-inks a:link,
+.social-inks a:visited {
+    display: inline-block;
+}

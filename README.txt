@@ -52,6 +52,16 @@ Creating Themes(Pages order wise):-
       - Enable Post Formats
       - Craft different presentations
 
+14. - Widget
+      - What is a widget
+        A widget is a self contained chunk of content that usually has a very specific purpose they get displayed on websites.
+        Recent posts
+        Categories widget
+
+      - Wordpress treats widget as joint unordered lists
+
+15  - Custom Home page (front-page.php)
+
 
 ===================================================================
 ===================================================================
@@ -75,8 +85,6 @@ My Themes:-
     + Buntu
     + iParty
     + Sparking
-
-
 
 
 Wordpress Picture
