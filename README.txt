@@ -60,7 +60,18 @@ Creating Themes(Pages order wise):-
 
       - Wordpress treats widget as joint unordered lists
 
-15  - Custom Home page (front-page.php)
+15. - Custom Home page (front-page.php)
+
+16. - Wordpress Custom Loop WP_Query
+
+17. - WordPress Customize Appearance Options (Customize Color Picker)
+        - In Appearance->customize, How to add New section to side bar
+        + Controls
+        + Settings
+        + Sections
+
+18. - Custom Themes Options & Content
+        -
 
 
 ===================================================================

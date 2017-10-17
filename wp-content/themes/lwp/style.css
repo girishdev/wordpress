@@ -91,6 +91,36 @@ article.post-gallery img {
     float: left;
 }
 
+/* Post Columns */
+.home-columns {
+    padding-top: 30px;
+}
+.one-half {
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+.one-half h3 {
+    display: inline-block;
+}
+.one-half h3 a {
+    text-decoration: none;
+}
+.one-half span {
+    background-color: #cccccc;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 90%;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.very-small-thumbnail {
+    text-align: center;
+}
+.last {
+    margin-right: 0px;
+}
+
 /*Side column*/
 .secondary-column {
     width: 30%;
