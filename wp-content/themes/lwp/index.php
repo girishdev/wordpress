@@ -4,7 +4,7 @@ get_header(); ?>
 
 	<div class="site-content clearfix">
 		<div class="main-column">
-            
+
             <?php
 			$args = array(
 				'post_type' => 'post'

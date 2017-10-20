@@ -2,6 +2,8 @@
 
 function learningWordPress_resources(){
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+//	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
 }
 
 add_action('wp_enqueue_scripts', 'learningWordPress_resources');
@@ -175,4 +177,44 @@ function custom_menu(){
 function custom_menu_page_display(){
 	echo '<h1>Hello World</h1>';
 	echo '<p>This is a custom page</p>';
+}
+
+add_action( 'get_sidebar', 'head_func' );
+function head_func (){
+	echo "This is a hook test";
+}
+
+add_action( 'init', 'process_post' );
+
+function process_post() {
+    global $wpdb;
+
+//	echo get_stylesheet_uri();echo '<br />';
+//	echo get_template_directory_uri();echo '<br />';
+	if( isset( $_POST['formsubmit'] ) ) {
+		$_POST['fname'];
+		$_POST['email'];
+		$_POST['password'];
+
+		$wpdb->insert(
+		        'mytable',
+                array(
+                        'fname' => $_POST['fname'],
+                        'email' => $_POST['email'],
+                        'password' => $_POST['password']
+                ),
+                array(
+                        '%s',
+                        '%s',
+                        '%d'
+                )
+        );
+
+		if($wpdb){
+			return 'Inserted Successfully';
+        } else {
+		    return 'Failed to Insert data!';
+        }
+	}
+
 }

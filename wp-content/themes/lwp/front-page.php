@@ -72,6 +72,60 @@ get_header(); ?>
 
             </div>
 
+            <div class="form-class clearfix">
+                <h3>Please Fill this form:</h3>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="fname">Your Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" name="formsubmit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <div class="get_alldata">
+                    <form method="post">
+                        <button type="submit" name="getdata" class="btn btn-primary">Get All Data</button>
+                    </form>
+
+                    <?php
+                        if( isset( $_POST['getdata'] ) ) {
+                            global $wpdb;
+	                        $htmlOut = '';
+                            $results = $wpdb->get_results( "SELECT * FROM mytable" );
+//                            echo '<pre>';
+//                            print_r( $result );
+	                        $htmlOut .= '<table class="table table-striped">';
+	                        $htmlOut .= '<thead>';
+                            $htmlOut .= '<tr>';
+                            $htmlOut .= '<th>Name</th>';
+                            $htmlOut .= '<th>Email</th>';
+                            $htmlOut .= '<th>Password</th>';
+                            $htmlOut .= '</tr>';
+	                        $htmlOut .= '</thead>';
+                            foreach($results as $result){
+                                $htmlOut .= '<tr>';
+                                $htmlOut .= '<td>'.$result->fname.'</td>';
+                                $htmlOut .= '<td>'.$result->email.'</td>';
+                                $htmlOut .= '<td>'.$result->password.'</td>';
+                                $htmlOut .= '</tr>';
+
+                            }
+	                        echo $htmlOut .= '</table>';
+
+                        }
+                        ?>
+
+                </div>
+            </div>
+
 	</div>
 
 <?php

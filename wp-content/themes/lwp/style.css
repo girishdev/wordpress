@@ -320,3 +320,20 @@ div.hd-search #searchsubmit{
     border: none;
     vertical-align: top;
 }
+
+/*Styles for Form*/
+div.form-class {
+    border-top: 2px dotted #006ec3;
+}
+.get_alldata {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px dotted #006ec3;
+}
+.get_alldata .btn {
+    margin-bottom: 20px;
+}
+.table{
+    border-top: 2px dotted #006ec3;
+    padding-top: 20px;
+}
