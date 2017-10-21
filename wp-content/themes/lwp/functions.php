@@ -2,8 +2,9 @@
 
 function learningWordPress_resources(){
     wp_enqueue_style('style', get_stylesheet_uri());
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
-//	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery-3.2.1.min.js');
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/bootstrap.min.js', array ( 'jquery' ), 3.2, true);
 }
 
 add_action('wp_enqueue_scripts', 'learningWordPress_resources');

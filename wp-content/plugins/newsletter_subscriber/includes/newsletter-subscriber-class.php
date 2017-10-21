@@ -28,6 +28,33 @@ class Newsletter_Subscriber_Widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		// outputs the content of the widget
+        echo $args['before_widget'];
+        echo $args['before_title'];
+        if(!empty($instance['title'])){
+            echo $instance['title'];
+        }
+        echo $args['after_title'];
+
+        ?>
+            <h3><?php $instance['title']; ?></h3>
+            <div id="form-msg"></div>
+            <form id="subscriber-form" method="post" action="<?php echo plugins_url() . '/newsletter_subscriber/includes/newsletter-subscriber-mailer.php'; ?>">
+                <div class="form-group">
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" name="name" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label><br>
+                    <input type="text" id="email" name="email" class="form-control" >
+                </div>
+                <input type="hidden" name="recipient" value="<?php echo $instance['recipient']; ?>">
+                <input type="hidden" name="subject" value="<?php echo $instance['subject']; ?>">
+                <input type="submit" name="subscriber_submit" class="btn btn-primary" value="Subscribe">
+                <br><br>
+            </form>
+
+        <?php
+        echo $args['after_widget'];
 	}
 
 	/**
@@ -39,7 +66,7 @@ class Newsletter_Subscriber_Widget extends WP_Widget {
 		// outputs the options form on admin
 		$title = !empty($instance['title']) ? $instance['title'] : __('Newsletter Subscriber','ns_domain');
 		$recipient = $instance['recipient'];
-		$subject = !empty($instance['subject']) ? $instance['subscriber'] : __('You have a new subscriber ','ns_domain');
+		$subject = !empty($instance['subject']) ? $instance['subject'] : __('You have a new subscriber ','ns_domain');
 		?>
 			<p>
 				<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label><br >
@@ -65,5 +92,11 @@ class Newsletter_Subscriber_Widget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		// processes widget options to be saved
+		$instance = array(
+                'title' => (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) :  '',
+                'recipient' => (!empty($new_instance['recipient'])) ? strip_tags($new_instance['recipient']) :  '',
+                'subject' => (!empty($new_instance['subject'])) ? strip_tags($new_instance['subject']) :  ''
+        );
+		return $instance;
 	}
 }
