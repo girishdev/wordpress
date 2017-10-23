@@ -188,6 +188,9 @@ article.post-gallery img {
     padding-right: 10px;
     border-right: 1px dotted #BBBBBB;
 }
+.site-footer nav ul li:last-child{
+    border: none;
+}
 
 /*Page layout*/
 article.page h2 {
