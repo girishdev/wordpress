@@ -30,7 +30,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `wp_usermeta` (
 
 LOCK TABLES `wp_usermeta` WRITE;
 /*!40000 ALTER TABLE `wp_usermeta` DISABLE KEYS */;
-INSERT INTO `wp_usermeta` VALUES (1,1,'nickname','Giri'),(2,1,'first_name','Girish'),(3,1,'last_name','kumar'),(4,1,'description',''),(5,1,'rich_editing','true'),(6,1,'comment_shortcuts','false'),(7,1,'admin_color','fresh'),(8,1,'use_ssl','0'),(9,1,'show_admin_bar_front','false'),(10,1,'locale',''),(11,1,'wp_capabilities','a:1:{s:13:\"administrator\";b:1;}'),(12,1,'wp_user_level','10'),(13,1,'dismissed_wp_pointers',''),(14,1,'show_welcome_panel','1'),(16,1,'wp_dashboard_quick_press_last_post_id','61'),(17,1,'community-events-location','a:1:{s:2:\"ip\";s:2:\"::\";}'),(18,1,'managenav-menuscolumnshidden','a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),(19,1,'metaboxhidden_nav-menus','a:1:{i:0;s:12:\"add-post_tag\";}'),(20,1,'nav_menu_recently_edited','2'),(22,1,'closedpostboxes_post','a:0:{}'),(23,1,'metaboxhidden_post','a:5:{i:0;s:13:\"trackbacksdiv\";i:1;s:10:\"postcustom\";i:2;s:16:\"commentstatusdiv\";i:3;s:7:\"slugdiv\";i:4;s:9:\"authordiv\";}'),(24,1,'wp_user-settings','libraryContent=browse'),(25,1,'wp_user-settings-time','1507724923'),(28,1,'session_tokens','a:1:{s:64:\"529613a2eeee08f4cbc1954aeda0e589f2b9a5668108777a7e79b4e49e2c8b47\";a:4:{s:10:\"expiration\";i:1508916524;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:135:\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.100 Chrome/61.0.3163.100 Safari/537.36\";s:5:\"login\";i:1508743724;}}'),(29,1,'closedpostboxes_dashboard','a:0:{}'),(30,1,'metaboxhidden_dashboard','a:0:{}');
+INSERT INTO `wp_usermeta` VALUES (1,1,'nickname','Giri'),(2,1,'first_name','Girish'),(3,1,'last_name','kumar'),(4,1,'description',''),(5,1,'rich_editing','true'),(6,1,'comment_shortcuts','false'),(7,1,'admin_color','fresh'),(8,1,'use_ssl','0'),(9,1,'show_admin_bar_front','false'),(10,1,'locale',''),(11,1,'wp_capabilities','a:1:{s:13:\"administrator\";b:1;}'),(12,1,'wp_user_level','10'),(13,1,'dismissed_wp_pointers',''),(14,1,'show_welcome_panel','1'),(16,1,'wp_dashboard_quick_press_last_post_id','3'),(17,1,'community-events-location','a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),(18,1,'managenav-menuscolumnshidden','a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),(19,1,'metaboxhidden_nav-menus','a:1:{i:0;s:12:\"add-post_tag\";}'),(20,1,'nav_menu_recently_edited','2'),(21,1,'session_tokens','a:2:{s:64:\"3b9338494e4206f7bba3ef33984b6de26986beb4f27c225ccafb8f7d382f1ff3\";a:4:{s:10:\"expiration\";i:1507874370;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:76:\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0\";s:5:\"login\";i:1507701570;}s:64:\"54feb77e8ddbded1edbba549a92984e9285e273fbec49a9bd8c1f98c19277526\";a:4:{s:10:\"expiration\";i:1507895169;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:76:\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0\";s:5:\"login\";i:1507722369;}}'),(22,1,'closedpostboxes_post','a:0:{}'),(23,1,'metaboxhidden_post','a:5:{i:0;s:13:\"trackbacksdiv\";i:1;s:10:\"postcustom\";i:2;s:16:\"commentstatusdiv\";i:3;s:7:\"slugdiv\";i:4;s:9:\"authordiv\";}'),(24,1,'wp_user-settings','libraryContent=browse'),(25,1,'wp_user-settings-time','1507724923');
 /*!40000 ALTER TABLE `wp_usermeta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-23 22:33:53
+-- Dump completed on 2017-10-12 21:10:35

@@ -30,7 +30,7 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `wp_terms` (
 
 LOCK TABLES `wp_terms` WRITE;
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
-INSERT INTO `wp_terms` VALUES (1,'Uncategorized','uncategorized',0),(2,'Primary menu Links','primary-menu-links',0),(3,'Footer Menu Links','footer-menu-links',0),(4,'News','news',0),(5,'Sports','sports',0),(6,'Entertainment','entertainment',0),(7,'post-format-aside','post-format-aside',0),(8,'post-format-link','post-format-link',0),(9,'post-format-gallery','post-format-gallery',0);
+INSERT INTO `wp_terms` VALUES (1,'Uncategorized','uncategorized',0),(2,'Primary menu Links','primary-menu-links',0),(3,'Footer Menu Links','footer-menu-links',0),(4,'News','news',0),(5,'Sports','sports',0),(6,'Entertainment','entertainment',0);
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-23 22:33:52
+-- Dump completed on 2017-10-12 21:10:34

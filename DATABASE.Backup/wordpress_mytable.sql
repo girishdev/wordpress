@@ -16,31 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `wp_terms`
+-- Table structure for table `mytable`
 --
 
-DROP TABLE IF EXISTS `wp_terms`;
+DROP TABLE IF EXISTS `mytable`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `wp_terms` (
-  `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `term_group` bigint(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`term_id`),
-  KEY `slug` (`slug`(191)),
-  KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+CREATE TABLE `mytable` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `wp_terms`
+-- Dumping data for table `mytable`
 --
 
-LOCK TABLES `wp_terms` WRITE;
-/*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
-INSERT INTO `wp_terms` VALUES (1,'Uncategorized','uncategorized',0),(2,'Primary menu Links','primary-menu-links',0),(3,'Footer Menu Links','footer-menu-links',0),(4,'News','news',0),(5,'Sports','sports',0),(6,'Entertainment','entertainment',0),(7,'post-format-aside','post-format-aside',0),(8,'post-format-link','post-format-link',0),(9,'post-format-gallery','post-format-gallery',0);
-/*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
+LOCK TABLES `mytable` WRITE;
+/*!40000 ALTER TABLE `mytable` DISABLE KEYS */;
+INSERT INTO `mytable` VALUES (1,'Girish','girish@gmail.com','123456'),(2,'Kumar','kumar@gmail.com','142536789'),(3,'test','test@gmail.com','123'),(22,'Raju','raju@gmail.com','147258');
+/*!40000 ALTER TABLE `mytable` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
