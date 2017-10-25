@@ -73,7 +73,27 @@ Creating Themes(Pages order wise):-
 18. - Custom Themes Options & Content
         -
 
+19. - About the Author Tutorial
+        - Custom Editable Theme Content(Image,Text and link)
+            -add_setting with this we have two function();
+            -setting
+                + data will be stored in database
+            -controller
+                + this is text box users actually see in admin panel and type text into
+===================================================================
+===================================================================
+Plugins Created by me:-
+    - facebook-footer-link
+    - social-links
+    - newsletter_subscriber
+    - Todo List Plugin
+        Custom Post type plugin (https://codex.wordpress.org/Post_Types)
+        - Title
+        - Details
+        - Priority
+        - Due date
 
+===================================================================
 ===================================================================
 ===================================================================
 Portfolio Gallery For My Job Description:-
