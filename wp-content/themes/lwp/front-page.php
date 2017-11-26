@@ -3,7 +3,7 @@
 get_header(); ?>
 
 	<div class="site-content clearfix">
-
+            <h3 style="color: deeppink;"><u>This is Displaying of front-page from front-page.php</u></h3>
 			<?php
 			$args = array(
 				'post_type' => 'post'

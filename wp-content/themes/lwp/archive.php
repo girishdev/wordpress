@@ -1,6 +1,11 @@
 <?php
 
-get_header();
+get_header(); ?>
+
+    <h3 style="color: deeppink;"><u>This is Displaying of Archive Pages from archive.php</u></h3>
+
+<?php
+
 $args = array(
 	'post_type' => 'post'
 );

@@ -4,6 +4,7 @@ get_header(); ?>
 
     <div class="site-content clearfix">
 		<div class="main-column">
+            <h3 style="color: deeppink;"><u>This is Displaying of Single Pages from page.php</u></h3>
             <?php
             $args = array(
                 'post_type' => 'post'

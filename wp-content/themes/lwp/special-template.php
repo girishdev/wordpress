@@ -4,7 +4,11 @@
  * Template Name: Special Layout
  */
 
-get_header();
+get_header(); ?>
+
+<h3 style="color: deeppink;"><u>This is Displaying of Special-Template from special-template.php</u></h3>
+
+<?php
 
 $args = array(
     'post_type' => 'post'

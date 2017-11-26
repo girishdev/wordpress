@@ -1,6 +1,10 @@
 <?php
 
-get_header();
+get_header(); ?>
+
+    <h3 style="color: deeppink;"><u>Displays page called as its slug name portfolio</u></h3>
+
+<?php
 $args = array(
     'post_type' => 'post'
 );

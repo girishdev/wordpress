@@ -1,6 +1,10 @@
 <?php
 
-get_header();
+get_header(); ?>
+
+<h3 style="color: deeppink;"><u>This is Displaying of Single posts from single.php</u></h3>
+
+<?php
 $args = array(
 	'post_type' => 'post'
 );

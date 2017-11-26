@@ -1,6 +1,10 @@
 <?php
 
-get_header();
+get_header(); ?>
+
+<h3 style="color: deeppink;"><u>Displays from search page: </u></h3>
+
+<?php
 $args = array(
     'post_type' => 'post'
 );
